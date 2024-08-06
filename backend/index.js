@@ -4,7 +4,7 @@ const cors = require("cors");
 const axios = require("axios");
 const app = express();
 app.use(express.json());
-app.use(cors({origin:true}));
+app.use(cors({ origin:'https://echomessenger-1.onrender.com/'}));
 const privateKey = process.env.PRIVATE_KEY;
 const PORT = process.env.PORT || 3005;
 
