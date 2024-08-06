@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3005;
 app.post('/authenticate',async(req,res)=>{
     const {username} = req.body;
     try{
-        const response = await axios.put('https://api.chatengine.io/users/', { username: username, secret: username }, { headers: { 'PRIVATE-KEY': privateKey } });
+        const response = await axios.put('https://api.chatengine.io/users/', { username: username, secret: username }, { headers: { 'PRIVATE-KEY': '0bc624ed-04f4-4bc6-b269-7cbc35a4cb8b' } });
         return res.status(response.status).json(response.data);
     }
     catch(error){
