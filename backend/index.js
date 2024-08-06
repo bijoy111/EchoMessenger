@@ -18,5 +18,7 @@ app.post('/authenticate',async(req,res)=>{
         console.log(error);
     }
 })
-
+app.get('/', (req, res) => {
+    res.send('Server is up and running');
+});
 app.listen(PORT);
