@@ -3,7 +3,7 @@ const AuthPage=(props)=>{
     const onSubmit=(e)=>{
         e.preventDefault();
         const{value}=e.target[0];
-        axios.post('http://localhost:3005/authenticate',{username:value})
+        axios.post('https://echomessenger.onrender.com/authenticate',{username:value})
         .then((response)=>props.onAuth({...response.data,secret:value}))
         .catch((error)=>console.log(error));
     };

@@ -1,4 +1,4 @@
-POST http://localhost:3005/authenticate
+POST https://echomessenger.onrender.com/authenticate
 Content-Type: application/json
 
 { "username": "adam" }
